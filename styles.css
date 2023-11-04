@@ -1,0 +1,21 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(16, 20px);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 320px; /* 16 squares * 20px each = 320px */
+    height: 320px; /* 16 squares * 20px each = 320px */
+    background-color: #f1f1f1;
+}
+
+
+
+.square {
+    width: 30px;
+    height: 30px;
+    border-color:black;
+    background-color: blue;
+    font-size:0 px;
+  }
