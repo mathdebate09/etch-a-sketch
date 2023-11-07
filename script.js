@@ -1,5 +1,8 @@
 const container = document.querySelector('#grid-container');
 const customGrid = document.querySelector('#custom-grid');
+const gridSizeSlider = document.querySelector('#grid-size-slider');
+const gridSizeLabel = document.querySelector('#slider-value');
+
 let gridSize = 16;
 
 // for holding and dragging through the sketchpad to draw
@@ -37,30 +40,17 @@ function createGrid(gridSize) {
     }
 }
 
-customGrid.addEventListener('click', function () {
-    const newGridSize = parseInt(prompt("Enter a new grid size (e.g., 16):"));
-    if (!isNaN(newGridSize)) {
-        gridSize = newGridSize; // Update the gridSize
-        createGrid(gridSize); // Recreate the grid with the new size
-    } else {
-        alert("Please enter a valid number for the grid size.");
-    }
-});
-
 function sideCalculator(gridSize) {
     const result = 640 / gridSize;
     return Math.round(result * 100) / 100;
 }
 
-createGrid(gridSize);
+// grid slider event handler to implement the conditions
+gridSizeSlider.addEventListener('input', function () {
+    const newGridSize = parseInt(gridSizeSlider.value);
+    gridSize = newGridSize; // Update the gridSize
+    gridSizeLabel.textContent = newGridSize; // Update the label
+    createGrid(gridSize); // Recreate the grid with the new size
+});
 
-// const customGrid = document.querySelector('#custom-grid');
-// customGrid.addEventListener('click', function () {
-//     const newGridSize = parseInt(prompt("Enter a new grid size (e.g., 16):"));
-//     if (!isNaN(newGridSize)) {
-//         gridSize = newGridSize; // Update the gridSize
-//         createGrid(gridSize); // Recreate the grid with the new size
-//     } else {
-//         alert("Please enter a valid number for the grid size.");
-//     }
-// });
+createGrid(16);
