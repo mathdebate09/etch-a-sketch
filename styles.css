@@ -1,3 +1,31 @@
+/* GLOBAL STYLES */
+* {
+    background-color: #D5E6EC;
+}
+
+/* HEADING */
+.heading {
+    font-family:'Pacifico', serif;
+    font-size:32px;
+    text-align:center;
+    color:#A7988A;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left:550px;
+}
+
+/* CONTROLS */
+#controls {
+    text-align:center;
+    font-family:'Bricolage Grotesque', serif;
+    color:#7F6550;
+}
+
 /* GRID WORK */
 
 #grid-container {
@@ -12,14 +40,14 @@
     max-width: 640px; /* 16 squares * 20px each = 320px */
     min-height: 640px; /* 16 squares * 20px each = 320px */
     background-color: #f1f1f1;
+    border:8px solid #C5CBBC;
+    border-radius:1%;
 }
 
 .grid {
-    width: 40.34 px;
+    width: 40 px;
     height: 40px;
     border-color:black;
-    background-color: blue;
+    background-color:aliceblue;
     font-size:0 px;
 }
-
-

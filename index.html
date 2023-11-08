@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque|Pacifico">
 </head>
-<body>
-    <div id="grid-container"></div>
 
-    <div id="controls">
-        <input type="range" id="grid-size-slider" min="16" max="64" step="1" value="16">
-        <label for="grid-size-slider">Grid Size: <span id="slider-value">16</span></label>
+<body>
+    <p class="heading">Etch-a-Sketch</p>
+    <div class="main-content">
+        <div id="controls">
+            <input type="range" id="grid-size-slider" min="16" max="64" step="1" value="16"> <br>
+            <label for="grid-size-slider">Grid Size: <span id="slider-value">16</span></label>
+        </div>
+
+        <div id="grid-container"></div> 
     </div>
-    
 </body>
 <script src="script.js"></script>
+
 </html>
