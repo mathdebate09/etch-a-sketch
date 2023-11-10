@@ -56,3 +56,56 @@ body {
     font-size:0 px;
     padding:auto;
 }
+
+/* UTILITY PANEL */
+.utility-panel {
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:48px;
+}
+
+.bg-card {
+    height: 95px;
+    width: 95px;
+    background-color:white;
+    border-radius: 20%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* COLOR OPTIONS */
+#lavender {
+    height: 65px;
+    width: 65px;
+    background-color: #c7b0f5;
+    border-radius: 50%;
+    padding:auto;
+}
+
+#sunflower {
+    height: 65px;
+    width: 65px;
+    background-color: #F2DF8C;
+    border-radius: 50%;
+    padding:auto;
+}
+
+#crimson {
+    height: 65px;
+    width: 65px;
+    background-color: #F56C7B;
+    border-radius: 50%;
+    padding:auto;
+}
+
+#calm-blu {
+    height: 65px;
+    width: 65px;
+    background-color: #A0C3E4;
+    border-radius: 50%;
+    padding:auto;
+}

@@ -33,7 +33,7 @@ function createGrid(gridSize) {
 
             grid.addEventListener('mouseover', function (event) {
                 if (isDrawing) {
-                    event.target.style.backgroundColor = "red";
+                    event.target.style.backgroundColor = "#D8D4EC";
                 }
             });
         }
