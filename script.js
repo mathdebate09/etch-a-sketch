@@ -1,3 +1,4 @@
+// Grid querySelectors
 const container = document.querySelector('#grid-container');
 const customGrid = document.querySelector('#custom-grid');
 const gridSizeSlider = document.querySelector('#grid-size-slider');
@@ -19,6 +20,32 @@ container.addEventListener('mouseleave', () => {
     isDrawing = false;
 });
 
+//Utility Panel querySelectors
+const lavenderBrush = document.querySelector('.lavender-card');
+const sunflowerBrush = document.querySelector('.sunflower-card');
+const eraserBrush = document.querySelector('.eraser-card');
+const crimsonBrush = document.querySelector('.crimson-card');
+const calmBluBrush = document.querySelector('.calm-blu-card');
+
+//for setting the colour to be used when drawing on the sketchpad
+let etchBrush = "#8A8A89";
+
+lavenderBrush.addEventListener('click', () => {
+    etchBrush = "#c7b0f5";
+});
+sunflowerBrush.addEventListener('click', () => {
+    etchBrush = "#F2DF8C";
+});
+eraserBrush.addEventListener('click', () => {
+    etchBrush = "aliceblue";
+});
+crimsonBrush.addEventListener('click', () => {
+    etchBrush = "#F56C7B";
+});
+calmBluBrush.addEventListener('click', () => {
+    etchBrush = "#A0C3E4";
+});
+
 function createGrid(gridSize) {
     container.innerHTML = '';
     for (let rows = 0; rows < parseInt(gridSize); rows++) {
@@ -33,7 +60,7 @@ function createGrid(gridSize) {
 
             grid.addEventListener('mouseover', function (event) {
                 if (isDrawing) {
-                    event.target.style.backgroundColor = "#D8D4EC";
+                    event.target.style.backgroundColor = etchBrush;
                 }
             });
         }
