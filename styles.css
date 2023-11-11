@@ -52,9 +52,7 @@ body {
 .grid {
     width: 40px;
     height: 40px;
-    border-color:black;
     background-color:aliceblue;
-    font-size:0 px;
     padding:auto;
 }
 

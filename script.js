@@ -67,6 +67,7 @@ function createGrid(gridSize) {
     }
 }
 
+// calculates height-width for changed size of sketchpad
 function sideCalculator(gridSize) {
     const result = 640 / gridSize;
     return Math.round(result * 100) / 100;
